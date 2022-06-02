@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mortgage Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="loan-calc">
+            <h2>Mortgage Calculator</h2>
+            <form action="#">
+                <div class="group">
+                    <div class="title">Total Cost:</div>
+                    <input type="text" class="cost" id="inCost">
+                </div>
+                <div class="group">
+                    <div class="title">Down Payment:</div>
+                    <input type="text" class="d-pymt" id="inDown">
+                </div>
+                <div class="group">
+                    <div class="title">APR (Interest Rate):</div>
+                    <input type="text" class="apr" id="inAPR">
+                </div>
+                <div class="group">
+                    <div class="title">Amortization (in years):</div>
+                    <input type="text" class="amortization" id="inAmortization">
+                </div>
+                <div class="group">
+                    <button class="calc" id="btnCalc">Calculate</button>
+                </div>
+                <div class="group">
+                    <p>Total Monthly Payments: <span id="outMonthly"></span></p>
+                </div>
+                
+            </form>
+        </div>
+
+        
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lobster', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./mortgage.jpg);
+    font-size: 18px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.loan-calc{
+    display: grid;
+    flex-direction: column;
+    width: 450px;
+    padding: 30px;
+    border: 1px solid rgb(134, 205, 247);
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(to right, #0ED2F7, #98ece8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.75;
+}
+input{
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    width: 100%;
+    border: transparent;
+}
+.calc{
+    background: rgb(48, 47, 47);
+    color: whitesmoke;
+    padding: 7.5px;
+    width: 100%;
+    border-radius: 25px;
+    outline: none;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    border: whitesmoke;
+    margin: 10px auto;
+}
+@media screen and (max-width: 600px){
+    body{
+        overflow: hidden;
+    }
+    .container{
+        padding: 10px;
+        overflow: hidden;
+    }
+    .loan-calc{
+        width: 325px;
+        overflow: hidden;
+    }
+}
